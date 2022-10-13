@@ -1,3 +1,4 @@
+/* 1. logo animation */
 #logo{
     animation: mymove 5s;
     width: 475px;
@@ -13,13 +14,14 @@
     to{width:475px; opacity: 100%;}
 }
 
-
+/* 2-10. styling for default view  */
 
 body{
     font-family: "Poppins", serif;
     background-image: url(../images/concrete_seamless.png);
     background-color: #f1f1f1;
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -28,6 +30,7 @@ header{
 }
 .nav_links{
     display: flex;
+    
     flex-direction: column;
 }
 
@@ -72,6 +75,8 @@ div.card > header{
     justify-content: center;
 }
 
+/* 11-13. styling for screen width > 900 px */
+
 @media only screen and (min-width: 900px) {
     header{
         justify-content: space-between;
@@ -91,12 +96,15 @@ div.card > header{
     }
 }
 
+/*14. reduced motion view  */
 @media (prefers-reduced-motion) {
     #logo{
         width: 475px;
         animation: nomove;
     }
 }
+
+/* 15-21. print view  */
 
 @media print{
     body {
