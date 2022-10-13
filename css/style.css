@@ -30,9 +30,11 @@ header{
     display: flex;
     flex-direction: column;
 }
-.nav_links:visited{
+
+.nav_links :visited {
     color:blue;
 }
+
 
 div.card > header{
     background-color: #288088;
@@ -132,4 +134,7 @@ div.card > header{
     body > header{
         flex-direction: column;
     }
+}
+.nav_links:visited {
+    color:blue;
 }
