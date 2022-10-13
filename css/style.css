@@ -9,8 +9,8 @@
 }
 
 @keyframes nomove {
-    from{width: 475px; opacity: 100% }
-    to{width:475px; opacity: 100%}
+    from{width: 475px; opacity: 100%;}
+    to{width:475px; opacity: 100%;}
 }
 
 
@@ -43,7 +43,7 @@ div.card > header{
     padding-bottom: 20px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    align-items: flex-start;
+    
 }
 
 .card {
@@ -55,8 +55,9 @@ div.card > header{
 .pricing {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+   
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -71,7 +72,7 @@ div.card > header{
     justify-content: center;
 }
 
-@media only screen and (mid-width: 900px) {
+@media only screen and (min-width: 900px) {
     header{
         justify-content: space-between;
     }
@@ -84,6 +85,9 @@ div.card > header{
     }
     .card {
         flex-basis: 275px;
+    }
+    div.card > header {
+        align-items: flex-start;
     }
 }
 
@@ -128,13 +132,11 @@ div.card > header{
     div.pricing div.card ul li + li:nth-child(2):after{
         content: '\1F44D'
     }
+    
     header{
         justify-content: center;
     }
     body > header{
         flex-direction: column;
     }
-}
-.nav_links:visited {
-    color:blue;
 }
